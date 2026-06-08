@@ -8,6 +8,9 @@ The project follows a complete data analytics workflow including data preprocess
 
 By combining statistical analysis with machine learning techniques, this project demonstrates how predictive analytics can be applied to real-world banking and credit risk management problems.
 
+<img width="1407" height="792" alt="image" src="https://github.com/user-attachments/assets/f062914d-4dbb-409f-8e1d-6dbe0226c883" />
+
+
 ---
 
 # 🎯 Business Problem
