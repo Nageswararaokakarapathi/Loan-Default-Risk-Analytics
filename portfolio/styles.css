@@ -326,23 +326,56 @@ body {
 
 .contact-links {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .contact-btn {
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
 }
 
 .contact-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5);
+}
+
+.contact-btn.github-btn {
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+}
+
+.contact-btn.github-btn:hover {
+    box-shadow: 0 12px 30px rgba(50, 50, 50, 0.5);
+}
+
+.contact-btn.linkedin-btn {
+    background: linear-gradient(135deg, #0077b5 0%, #005a87 100%);
+}
+
+.contact-btn.linkedin-btn:hover {
+    box-shadow: 0 12px 30px rgba(0, 119, 181, 0.5);
+}
+
+.contact-btn.email-btn {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.contact-btn.email-btn:hover {
+    box-shadow: 0 12px 30px rgba(231, 76, 60, 0.5);
+}
+
+.btn-icon {
+    font-size: 1.2rem;
 }
 
 /* Footer */
@@ -382,6 +415,16 @@ body {
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -408,5 +451,10 @@ body {
 
     .project-card h3 {
         font-size: 1.2rem;
+    }
+
+    .contact-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
     }
 }
