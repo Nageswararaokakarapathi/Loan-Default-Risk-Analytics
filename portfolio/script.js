@@ -89,42 +89,47 @@ function onWindowResize() {
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
-// Project Data
+// Project Data - Updated with actual project descriptions
 const projectsData = [
     {
         title: "Loan Default Risk Analytics",
-        description: "Predictive Analytics project using Machine Learning to identify loan default risk and evaluate borrower creditworthiness.",
+        description: "Predictive Analytics project using Machine Learning to identify loan default risk, evaluate borrower creditworthiness, and support data-driven lending decisions.",
         icon: "🎯",
         repo: "Loan-Default-Risk-Analytics",
-        link: "https://github.com/Nageswararaokakarapathi/Loan-Default-Risk-Analytics"
+        link: "https://github.com/Nageswararaokakarapathi/Loan-Default-Risk-Analytics",
+        languages: "Jupyter Notebook"
     },
     {
-        title: "E-Commerce BI Analysis",
-        description: "End-to-end E-Commerce Sales, Customer & Product Analytics using SQL to generate actionable business insights and KPIs.",
+        title: "E-Commerce SQL Business Intelligence",
+        description: "End-to-end E-Commerce Sales, Customer, Product & Marketing Analytics using SQL to generate actionable business insights and KPIs.",
         icon: "💼",
         repo: "ecommerce-sql-business-intelligence",
-        link: "https://github.com/Nageswararaokakarapathi/ecommerce-sql-business-intelligence"
+        link: "https://github.com/Nageswararaokakarapathi/ecommerce-sql-business-intelligence",
+        languages: "SQL"
     },
     {
-        title: "Employee Attrition Dashboard",
-        description: "Power BI dashboard for employee attrition analysis, workforce intelligence, retention drivers and strategic HR decision-making.",
+        title: "Employee Attrition Workforce Intelligence",
+        description: "A Power BI dashboard for employee attrition analysis, workforce intelligence, retention drivers, employee segmentation, and strategic HR decision-making.",
         icon: "👥",
         repo: "employee-attrition-workforce-intelligence-dashboard",
-        link: "https://github.com/Nageswararaokakarapathi/employee-attrition-workforce-intelligence-dashboard"
+        link: "https://github.com/Nageswararaokakarapathi/employee-attrition-workforce-intelligence-dashboard",
+        languages: "Power BI"
     },
     {
         title: "E-Commerce Power BI Dashboard",
-        description: "Interactive Power BI dashboard analyzing sales performance, customer activity, product contribution and order fulfillment metrics.",
+        description: "Interactive Power BI dashboard analyzing sales performance, customer activity, product contribution, and order fulfillment metrics.",
         icon: "📊",
         repo: "ecommerce-powerbi-dashboard",
-        link: "https://github.com/Nageswararaokakarapathi/ecommerce-powerbi-dashboard"
+        link: "https://github.com/Nageswararaokakarapathi/ecommerce-powerbi-dashboard",
+        languages: "Power BI"
     },
     {
-        title: "E-Commerce BI Analytics",
-        description: "End-to-end business intelligence analysis using Python, focusing on revenue optimization, customer intelligence and marketing effectiveness.",
+        title: "E-Commerce Business Intelligence Analytics",
+        description: "End-to-end business intelligence analysis of e-commerce transactions using Python, focusing on revenue optimization, customer intelligence, marketing effectiveness, and executive decision-making.",
         icon: "🔍",
         repo: "Ecommerce-Business-Intelligence-Analytics",
-        link: "https://github.com/Nageswararaokakarapathi/Ecommerce-Business-Intelligence-Analytics"
+        link: "https://github.com/Nageswararaokakarapathi/Ecommerce-Business-Intelligence-Analytics",
+        languages: "Jupyter Notebook"
     }
 ];
 
@@ -141,6 +146,9 @@ function renderProjects() {
             <div class="project-icon">${project.icon}</div>
             <h3>${project.title}</h3>
             <p>${project.description}</p>
+            <div class="project-meta">
+                <span class="project-language">📚 ${project.languages}</span>
+            </div>
             <div class="project-links">
                 <a href="${project.link}" class="project-link" target="_blank">View on GitHub</a>
             </div>
