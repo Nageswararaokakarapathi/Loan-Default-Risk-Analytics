@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nageswararao Kakarapathi - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Data Analytics</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Background -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">Nageswararao Kakarapathi</h1>
+            <p class="hero-subtitle">Data Analyst | Business Intelligence | Predictive Analytics</p>
+            <button class="cta-button">Explore My Work</button>
+        </div>
+    </section>
+
+    <!-- 3D Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-container" id="projects-container"></div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">📊</div>
+                <h3>Data Analysis</h3>
+                <p>Statistical analysis, data cleaning, exploratory data analysis (EDA)</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔮</div>
+                <h3>Predictive Modeling</h3>
+                <p>Machine Learning, risk assessment, forecasting models</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📈</div>
+                <h3>Business Intelligence</h3>
+                <p>Power BI, SQL, dashboards, KPI optimization</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <h3>Python & SQL</h3>
+                <p>Data manipulation, automation, database querying</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3>Visualization</h3>
+                <p>Interactive dashboards, storytelling with data</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">💡</div>
+                <h3>Strategic Insights</h3>
+                <p>Business decision-making, actionable recommendations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-content">
+            <p>I'm always interested in discussing data-driven insights and analytics opportunities.</p>
+            <div class="contact-links">
+                <a href="https://github.com/Nageswararaokakarapathi" class="contact-btn" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" class="contact-btn" target="_blank">LinkedIn</a>
+                <a href="mailto:your-email@example.com" class="contact-btn">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Nageswararao Kakarapathi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
